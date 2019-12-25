@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+    head
+        title hacksaga - En Popüler Hackathonlar ve Eğitimlere ücretsiz başvur, ödüller kazan.
+        meta(name='title', content='hacksaga - En Popüler Hackathonlar ve Eğitimler')
+        meta(name='description', content='hacksaga - En Popüler Hackathonlar ve Eğitimlere ücretsiz başvur, mükemmel ödüller kazan.')
+        meta(name='keywords', content='teknoloji,hackathon,yarisma,technology,software,yazilim')
+        meta(name='robots', content='index, follow')
+        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+        meta(name='language', content='English')
+        meta(name='revisit-after', content=' days')
+        meta(name='author', content='hacksaga')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='stylesheets/front/open-iconic-bootstrap.min.css')
+        link(rel='stylesheet', href='stylesheets/front/animate.css')
+        link(rel='stylesheet', href='stylesheets/front/owl.carousel.min.css')
+        link(rel='stylesheet', href='stylesheets/front/owl.theme.default.min.css')
+        link(rel='stylesheet', href='stylesheets/front/magnific-popup.css')
+        link(rel='stylesheet', href='stylesheets/front/aos.css')
+        link(rel='stylesheet', href='stylesheets/front/bootstrap-datepicker.css')
+        link(rel='stylesheet', href='stylesheets/front/jquery.timepicker.css')
+        link(rel='stylesheet', href='stylesheets/front/style.css')
+        link(rel='stylesheet', href='stylesheets/front/custom.css')
+
+        block stylesheets
+    body
+        // NAV
+        nav#ftco-navbar.navbar.navbar-expand-lg.navbar-dark.ftco_navbar.bg-dark.ftco-navbar-light
+            .container-fluid.px-md-4
+                a.navbar-brand(href='/') hacksaga
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#ftco-nav', aria-controls='ftco-nav', aria-expanded='false', aria-label='Toggle navigation')
+                    span.oi.oi-menu
+                #ftco-nav.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.active
+                            a.nav-link(href='/') Anasayfa
+                        li.nav-item
+                            a.nav-link(href='/hackathon') Hackathon
+                        li.nav-item
+                            a.nav-link(href='/course') Eğitimler
+                        li.nav-item
+                            a.nav-link(href='/contact') İletişim
+        // END NAV
+        block content
+
+
+        #ftco-loader.show.fullscreen
+            svg.circular(width='48px', height='48px')
+                circle.path-bg(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke='#eeeeee')
+                circle.path(cx='24', cy='24', r='22', fill='none', stroke-width='4', stroke-miterlimit='10', stroke='#F96D00')
+
+
+
+
+        block javascripts
+            script(src='javascripts/front/jquery.min.js')
+            script(src='javascripts/front/jquery-migrate-3.0.1.min.js')
+            script(src='javascripts/front/popper.min.js')
+            script(src='javascripts/front/bootstrap.min.js')
+            script(src='javascripts/front/jquery.easing.1.3.js')
+            script(src='javascripts/front/jquery.waypoints.min.js')
+            script(src='javascripts/front/jquery.stellar.min.js')
+            script(src='javascripts/front/owl.carousel.min.js')
+            script(src='javascripts/front/jquery.magnific-popup.min.js')
+            script(src='javascripts/front/aos.js')
+            script(src='javascripts/front/jquery.animateNumber.min.js')
+            script(src='javascripts/front/scrollax.min.js')
+            script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+            script(src='javascripts/front/google-map.js')
+            script(src='javascripts/front/main.js')
+            script(src='https://kit.fontawesome.com/496fa15a2a.js', crossorigin='anonymous')

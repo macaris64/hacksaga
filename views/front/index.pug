@@ -1,0 +1,590 @@
+extends layout
+
+block content
+        // MAIN MENU
+        .hero-wrap.img(style='background-image: url(images/front/bg_1.jpg);')
+            .overlay
+            .container
+                .row.d-md-flex.no-gutters.slider-text.align-items-center.justify-content-center
+                    .col-md-10.d-flex.align-items-center.ftco-animate
+                        .text.text-center.pt-5.mt-md-5
+                            p.mb-4 İş Fikrin mi var? Teknoloji tutkunu musun?
+                            h1.mb-5 En Popüler Hackathonlar ve Eğitimler
+                            .ftco-counter.ftco-no-pt.ftco-no-pb
+                                .row
+                                    .col-md-4.d-flex.justify-content-center.counter-wrap.ftco-animate
+                                        .block-18
+                                            .text.d-flex
+                                                .icon.mr-2
+                                                    span.fas.fa-dharmachakra
+                                                .desc.text-left
+                                                    strong.number(data-number='46') 46
+                                                    span Hackathon
+                                    .col-md-4.d-flex.justify-content-center.counter-wrap.ftco-animate
+                                        .block-18.text-center
+                                            .text.d-flex
+                                                .icon.mr-2
+                                                    span.fas.fa-graduation-cap
+                                                .desc.text-left
+                                                    strong.number(data-number='45') 45
+                                                    span Eğitim
+                                    .col-md-4.d-flex.justify-content-center.counter-wrap.ftco-animate
+                                        .block-18.text-center
+                                            .text.d-flex
+                                                .icon.mr-2
+                                                    span.fas.fa-city
+                                                .desc.text-left
+                                                    strong.number(data-number='15') 15
+                                                    span Şehir
+                            .ftco-search.my-md-5
+                                .row
+                                    .col-md-12.nav-link-wrap
+                                        #v-pills-tab.nav.nav-pills.text-center(role='tablist', aria-orientation='vertical')
+                                            a#v-pills-1-tab.nav-link.active.mr-md-1(data-toggle='pill', href='#v-pills-1', role='tab', aria-controls='v-pills-1', aria-selected='true') Hackathon Bul
+                                            a#v-pills-2-tab.nav-link(data-toggle='pill', href='#v-pills-2', role='tab', aria-controls='v-pills-2', aria-selected='false') Eğitim Bul
+                                    .col-md-12.tab-wrap
+                                        #v-pills-tabContent.tab-content.p-4
+                                            #v-pills-1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-nextgen-tab')
+                                                form.search-job(action='#')
+                                                    .row.no-gutters
+                                                        .col-md.mr-md-2
+                                                            .form-group
+                                                                .form-field
+                                                                    .icon
+                                                                        span.fas.fa-dharmachakra
+                                                                    input.form-control(type='text', placeholder='örn. NASA Space Apps')
+                                                        .col-md.mr-md-2
+                                                            .form-group
+                                                                .form-field
+                                                                    .select-wrap
+                                                                        .icon
+                                                                            span.fas.fa-caret-down
+                                                                        select.form-control(name='', id='')
+                                                                            option(value='') Kategori
+                                                                            option(value='') Arttırılmış Gerçeklik
+                                                                            option(value='') Bilgisayar Ağları
+                                                                            option(value='') Blockchain
+                                                                            option(value='') Derin Öğrenme
+                                                                            option(value='') Doğal Dil İşleme
+                                                                            option(value='') Görüntü İşleme
+                                                                            option(value='') Makine Öğrenmesi
+                                                                            option(value='') Mobil Geliştirme
+                                                                            option(value='') Oyun Geliştirme
+                                                                            option(value='') Sanal Gerçeklik
+                                                                            option(value='') Siber Güvenlik
+                                                                            option(value='') Tasarım
+                                                                            option(value='') Yapay Zeka
+                                                                            option(value='') Veri Analizi
+                                                                            option(value='') Veri İletişimi
+                                                                            option(value='') Veri Madenciliği
+                                                                            option(value='') Web Geliştirme
+                                                        .col-md.mr-md-2
+                                                            .form-group
+                                                                .form-field
+                                                                    .select-wrap
+                                                                        .icon
+                                                                            span.fas.fa-map-marker-alt
+                                                                        select.form-control(name='', id='')
+                                                                            option(value='') Konum
+                                                                            option(value='1') Adana
+                                                                            option(value='2') Adıyaman
+                                                                            option(value='3') Afyonkarahisar
+                                                                            option(value='4') Ağrı
+                                                                            option(value='5') Amasya
+                                                                            option(value='6') Ankara
+                                                                            option(value='7') Antalya
+                                                                            option(value='8') Artvin
+                                                                            option(value='9') Aydın
+                                                                            option(value='10') Balıkesir
+                                                                            option(value='11') Bilecik
+                                                                            option(value='12') Bingöl
+                                                                            option(value='13') Bitlis
+                                                                            option(value='14') Bolu
+                                                                            option(value='15') Burdur
+                                                                            option(value='16') Bursa
+                                                                            option(value='17') Çanakkale
+                                                                            option(value='18') Çankırı
+                                                                            option(value='19') Çorum
+                                                                            option(value='20') Denizli
+                                                                            option(value='21') Diyarbakır
+                                                                            option(value='22') Edirne
+                                                                            option(value='23') Elazığ
+                                                                            option(value='24') Erzincan
+                                                                            option(value='25') Erzurum
+                                                                            option(value='26') Eskişehir
+                                                                            option(value='27') Gaziantep
+                                                                            option(value='28') Giresun
+                                                                            option(value='29') Gümüşhane
+                                                                            option(value='30') Hakkâri
+                                                                            option(value='31') Hatay
+                                                                            option(value='32') Isparta
+                                                                            option(value='33') Mersin
+                                                                            option(value='34') İstanbul
+                                                                            option(value='35') İzmir
+                                                                            option(value='36') Kars
+                                                                            option(value='37') Kastamonu
+                                                                            option(value='38') Kayseri
+                                                                            option(value='39') Kırklareli
+                                                                            option(value='40') Kırşehir
+                                                                            option(value='41') Kocaeli
+                                                                            option(value='42') Konya
+                                                                            option(value='43') Kütahya
+                                                                            option(value='44') Malatya
+                                                                            option(value='45') Manisa
+                                                                            option(value='46') Kahramanmaraş
+                                                                            option(value='47') Mardin
+                                                                            option(value='48') Muğla
+                                                                            option(value='49') Muş
+                                                                            option(value='50') Nevşehir
+                                                                            option(value='51') Niğde
+                                                                            option(value='52') Ordu
+                                                                            option(value='53') Rize
+                                                                            option(value='54') Sakarya
+                                                                            option(value='55') Samsun
+                                                                            option(value='56') Siirt
+                                                                            option(value='57') Sinop
+                                                                            option(value='58') Sivas
+                                                                            option(value='59') Tekirdağ
+                                                                            option(value='60') Tokat
+                                                                            option(value='61') Trabzon
+                                                                            option(value='62') Tunceli
+                                                                            option(value='63') Şanlıurfa
+                                                                            option(value='64') Uşak
+                                                                            option(value='65') Van
+                                                                            option(value='66') Yozgat
+                                                                            option(value='67') Zonguldak
+                                                                            option(value='68') Aksaray
+                                                                            option(value='69') Bayburt
+                                                                            option(value='70') Karaman
+                                                                            option(value='71') Kırıkkale
+                                                                            option(value='72') Batman
+                                                                            option(value='73') Şırnak
+                                                                            option(value='74') Bartın
+                                                                            option(value='75') Ardahan
+                                                                            option(value='76') Iğdır
+                                                                            option(value='77') Yalova
+                                                                            option(value='78') Karabük
+                                                                            option(value='79') Kilis
+                                                                            option(value='80') Osmaniye
+                                                                            option(value='81') Düzce
+                                                        .col-md
+                                                            .form-group
+                                                                .form-field
+                                                                    button.form-control.btn.btn-primary(type='submit') Ara
+                                            #v-pills-2.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-performance-tab')
+                                                form.search-job(action='#')
+                                                    .row
+                                                        .col-md
+                                                            .form-group
+                                                                .form-field
+                                                                    .icon
+                                                                        span.fas.fa-graduation-cap
+                                                                    input.form-control(type='text', placeholder='örn. Node.js Eğitimi')
+                                                        .col-md
+                                                            .form-group
+                                                                .form-field
+                                                                    .select-wrap
+                                                                        .icon
+                                                                            span.fas.fa-caret-down
+                                                                        select.form-control(name='', id='')
+                                                                            option(value='') Kategori
+                                                                            option(value='') Programlama Dilleri
+                                                                            option(value='') Bilgisayar Ağları
+                                                                            option(value='') Sertifika Programları
+                                                                            option(value='') İş Sağlığı ve Güvenliği
+                                                                            option(value='') Diğer
+                                                        .col-md.mr-md-2
+                                                            .form-group
+                                                                .form-field
+                                                                    .select-wrap
+                                                                        .icon
+                                                                            span.fas.fa-map-marker-alt
+                                                                        select.form-control(name='', id='')
+                                                                            option(value='') Konum
+                                                                            option(value='1') Adana
+                                                                            option(value='2') Adıyaman
+                                                                            option(value='3') Afyonkarahisar
+                                                                            option(value='4') Ağrı
+                                                                            option(value='5') Amasya
+                                                                            option(value='6') Ankara
+                                                                            option(value='7') Antalya
+                                                                            option(value='8') Artvin
+                                                                            option(value='9') Aydın
+                                                                            option(value='10') Balıkesir
+                                                                            option(value='11') Bilecik
+                                                                            option(value='12') Bingöl
+                                                                            option(value='13') Bitlis
+                                                                            option(value='14') Bolu
+                                                                            option(value='15') Burdur
+                                                                            option(value='16') Bursa
+                                                                            option(value='17') Çanakkale
+                                                                            option(value='18') Çankırı
+                                                                            option(value='19') Çorum
+                                                                            option(value='20') Denizli
+                                                                            option(value='21') Diyarbakır
+                                                                            option(value='22') Edirne
+                                                                            option(value='23') Elazığ
+                                                                            option(value='24') Erzincan
+                                                                            option(value='25') Erzurum
+                                                                            option(value='26') Eskişehir
+                                                                            option(value='27') Gaziantep
+                                                                            option(value='28') Giresun
+                                                                            option(value='29') Gümüşhane
+                                                                            option(value='30') Hakkâri
+                                                                            option(value='31') Hatay
+                                                                            option(value='32') Isparta
+                                                                            option(value='33') Mersin
+                                                                            option(value='34') İstanbul
+                                                                            option(value='35') İzmir
+                                                                            option(value='36') Kars
+                                                                            option(value='37') Kastamonu
+                                                                            option(value='38') Kayseri
+                                                                            option(value='39') Kırklareli
+                                                                            option(value='40') Kırşehir
+                                                                            option(value='41') Kocaeli
+                                                                            option(value='42') Konya
+                                                                            option(value='43') Kütahya
+                                                                            option(value='44') Malatya
+                                                                            option(value='45') Manisa
+                                                                            option(value='46') Kahramanmaraş
+                                                                            option(value='47') Mardin
+                                                                            option(value='48') Muğla
+                                                                            option(value='49') Muş
+                                                                            option(value='50') Nevşehir
+                                                                            option(value='51') Niğde
+                                                                            option(value='52') Ordu
+                                                                            option(value='53') Rize
+                                                                            option(value='54') Sakarya
+                                                                            option(value='55') Samsun
+                                                                            option(value='56') Siirt
+                                                                            option(value='57') Sinop
+                                                                            option(value='58') Sivas
+                                                                            option(value='59') Tekirdağ
+                                                                            option(value='60') Tokat
+                                                                            option(value='61') Trabzon
+                                                                            option(value='62') Tunceli
+                                                                            option(value='63') Şanlıurfa
+                                                                            option(value='64') Uşak
+                                                                            option(value='65') Van
+                                                                            option(value='66') Yozgat
+                                                                            option(value='67') Zonguldak
+                                                                            option(value='68') Aksaray
+                                                                            option(value='69') Bayburt
+                                                                            option(value='70') Karaman
+                                                                            option(value='71') Kırıkkale
+                                                                            option(value='72') Batman
+                                                                            option(value='73') Şırnak
+                                                                            option(value='74') Bartın
+                                                                            option(value='75') Ardahan
+                                                                            option(value='76') Iğdır
+                                                                            option(value='77') Yalova
+                                                                            option(value='78') Karabük
+                                                                            option(value='79') Kilis
+                                                                            option(value='80') Osmaniye
+                                                                            option(value='81') Düzce
+                                                        .col-md
+                                                            .form-group
+                                                                .form-field
+                                                                    button.form-control.btn.btn-primary(type='submit') Ara
+        // END MAIN MENU
+        // HACKATHONS SECTION
+        section.ftco-section.bg-light
+            .container
+                .row
+                    .col-lg-9.pr-lg-5
+                        .row.justify-content-center.pb-3
+                            .col-md-12.heading-section.ftco-animate
+                                span.subheading Yakın Zamanda Başlayacak
+                                h2.mb-4 En Popüler Hackathonlar
+                        .row
+                            // hackathon
+                            .col-md-12.ftco-animate
+                                .job-post-item.p-4.d-block.d-lg-flex.align-items-center
+                                    .one-third.mb-4.mb-md-0
+                                        .row
+                                            .col-lg-2
+                                                img(src='images/front/logo/nasa-logo.png', alt='', width='100px', height='85px')
+                                            .col-lg-10
+                                                .job-post-item-header.align-items-center
+                                                    span.subadge
+                                                        a(href='hackathon-arama.html') National Aeronautics and Space Administration - NASA
+                                                    h2.mr-3.text-black
+                                                        a(href='http://spaceapps.odtuggt.org/tr/', target='_blank') Space Apps '19
+                                        .job-post-item-body.d-block.d-md-flex
+                                            .mr-3
+                                                span.fas.fa-building
+                                                a(href='#', style='text-transform: capitalize')  Ankara / Türkiye
+                                            .mr-3
+                                                span.fas.fa-calendar-alt
+                                                span(style='text-transform: capitalize')  13 - 14 Kasım 2019
+                                            .mr-3
+                                                span.fas.fa-eye
+                                                span  143
+                                            .mr-3
+                                                span.fas.fa-lemon
+                                                a(href='#', style='text-transform: lowercase !important;')  #uzay
+                                                a(href='#', style='text-transform: lowercase !important;')  #bilim
+                                                a(href='#', style='text-transform: lowercase !important;')  #teknoloji
+                                    .one-forth.ml-auto.d-flex.align-items-center.mt-4.md-md-0
+                                        div
+                                            a.icon.text-center.d-flex.justify-content-center.align-items-center.icon.mr-2(href='#')
+                                                span.fas.fa-heart
+                                        a.btn.btn-primary.py-2(href='hackathon-single.html', target='_blank') Açıklama
+                            // end
+                    .col-lg-3.sidebar
+                        .row.justify-content-center.pb-3
+                            .col-md-12.heading-section.ftco-animate
+                                h2.mb-4 Popüler Firmalar
+                        .sidebar-box.ftco-animate
+                            div
+                                a.company-wrap(href='#')
+                                    img.img-fluid(src='images/front/logo/nasa-logo.png', alt='Colorlib Free Template')
+                                .text.p-3
+                                    h3
+                                        a(href='#') NASA
+                                    p
+                                        span.number 4
+                                        span İlan
+                        .sidebar-box.ftco-animate
+                            div
+                                a.company-wrap(href='#')
+                                    img.img-fluid(src='images/front/logo/teb-logo.png', alt='Colorlib Free Template')
+                                .text.p-3
+                                    h3
+                                        a(href='#') TEB
+                                    p
+                                        span.number 3
+                                        span İlan
+                        .sidebar-box.ftco-animate
+                            div
+                                a.company-wrap(href='#')
+                                    img.img-fluid(src='images/front/logo/yapikredi-logo.png', alt='Colorlib Free Template')
+                                .text.p-3
+                                    h3
+                                        a(href='#') Yapı Kredi
+                                    p
+                                        span.number 3
+                                        span İlan
+                        .sidebar-box.ftco-animate
+                            div
+                                a.company-wrap(href='#')
+                                    img.img-fluid(src='images/front/logo/bilgeadam-logo.png', alt='Colorlib Free Template')
+                                .text.p-3
+                                    h3
+                                        a(href='#') Bilge Adam
+                                    p
+                                        span.number 2
+                                        span İlan
+                        .sidebar-box.ftco-animate
+                            div
+                                a.company-wrap(href='#')
+                                    img.img-fluid(src='images/front/logo/turk-telekom-logo.png', alt='Colorlib Free Template')
+                                .text.p-3
+                                    h3
+                                        a(href='#') Türk Telekom
+                                    p
+                                        span.number 2
+                                        span İlan
+                        .sidebar-box.ftco-animate
+                            div
+                                a.company-wrap(href='#')
+                                    img.img-fluid(src='images/front/logo/blutv-logo.png', alt='Colorlib Free Template')
+                                .text.p-3
+                                    h3
+                                        a(href='#') BluTV
+                                    p
+                                        span.number 2
+                                        span İlan
+        // END HACKATHONS SECTION
+        // COURSES BANNER
+        section.ftco-section.ftco-candidates.bg-primary
+            .container
+                .row.pb-3
+                    .col-md-12.heading-section.heading-section-white.ftco-animate
+                        h2 Eğitimler
+        // END COURSES BANNER
+        section.ftco-section.bg-light
+            .container
+                .row
+                    .col-lg-12.pr-lg-12
+                        .row.justify-content-center.pb-3
+                            .col-md-12.heading-section.ftco-animate
+                                span.subheading Yakın Zamanda Başlayacak
+                                h2.mb-4 En Popüler Eğitimler
+                        .row
+                            // hackathon
+                            .col-md-12.ftco-animate
+                                .job-post-item.p-4.d-block.d-lg-flex.align-items-center
+                                    .one-third.mb-4.mb-md-0
+                                        .row
+                                            .col-lg-2
+                                                img(src='images/front/logo/nasa-logo.png', alt='', width='100px', height='85px')
+                                            .col-lg-10
+                                                .job-post-item-header.align-items-center
+                                                    span.subadge
+                                                        a(href='hackathon-arama.html') National Aeronautics and Space Administration - NASA
+                                                    h2.mr-3.text-black
+                                                        a(href='http://spaceapps.odtuggt.org/tr/', target='_blank') Space Apps '19
+                                        .job-post-item-body.d-block.d-md-flex
+                                            .mr-3
+                                                span.fas.fa-building
+                                                a(href='#', style='text-transform: capitalize')  Ankara / Türkiye
+                                            .mr-3
+                                                span.fas.fa-calendar-alt
+                                                span(style='text-transform: capitalize')  13 - 14 Kasım 2019
+                                            .mr-3
+                                                span.fas.fa-eye
+                                                span  143
+                                            .mr-3
+                                                span.fas.fa-lemon
+                                                a(href='#', style='text-transform: lowercase !important;')  #uzay
+                                                a(href='#', style='text-transform: lowercase !important;')  #bilim
+                                                a(href='#', style='text-transform: lowercase !important;')  #teknoloji
+                                    .one-forth.ml-auto.d-flex.align-items-center.mt-4.md-md-0
+                                        div
+                                            a.icon.text-center.d-flex.justify-content-center.align-items-center.icon.mr-2(href='#')
+                                                span.fas.fa-heart
+                                        a.btn.btn-primary.py-2(href='hackathon-single.html', target='_blank') Açıklama
+                            // end
+        // END COURSES SECTION
+        // ALINTI BANNER
+        section.ftco-section.ftco-candidates.bg-primary
+            .container
+                .row.pb-3
+                    .col-md-12.heading-section.heading-section-white.ftco-animate
+                        h2
+                            | "Bildiğim tek bir şey var, o da neyi bilmediğimiz hakkında hiç bir fikrimizin olmadığı."
+                    .col-md-12.heading-section.heading-section-white.ftco-animate
+                        .float-right
+                            h3(style='color: #0A204A') Elon Musk
+                            h6(style='color: #0A204A') Tesla CEO
+        // END ALINTI BANNER
+        // CATEGORIES SECTION
+        section.ftco-section
+            .container
+                .row.justify-content-center.mb-5
+                    .col-md-12.heading-section.ftco-animate
+                        span.subheading Hackathonlar ve Eğitimler
+                        h2.mb-0 #Kategoriler
+                .row
+                    .col-md-3.ftco-animate
+                        ul.category.text-center
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Arttırılmış Gerçeklik
+                                    br
+                                    span.number 354
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Bilgisayar Ağları
+                                    br
+                                    span.number 143
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Blockchain
+                                    br
+                                    span.number 100
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Derin Öğrenme
+                                    br
+                                    span.number 90
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                    .col-md-3.ftco-animate
+                        ul.category.text-center
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Doğal Dil İşleme
+                                    br
+                                    span.number 100
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Görüntü İşleme
+                                    br
+                                    span.number 200
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Makine Öğrenmesi
+                                    br
+                                    span.number 300
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Mobil Geliştirme
+                                    br
+                                    span.number 150
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                    .col-md-3.ftco-animate
+                        ul.category.text-center
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Oyun Geliştirme
+                                    br
+                                    span.number 400
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Sanal Gerçeklik
+                                    br
+                                    span.number 100
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Siber Güvenlik
+                                    br
+                                    span.number 222
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Tasarım
+                                    br
+                                    span.number 123
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                    .col-md-3.ftco-animate
+                        ul.category.text-center
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Yapay Zeka
+                                    br
+                                    span.number 324
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Veri Analizi
+                                    br
+                                    span.number 564
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Veri Madenciliği
+                                    br
+                                    span.number 234
+                                    span İlan
+                                    i.fas.fa-arrow-right
+                            li
+                                a(href='hackathon-kategori-arama.html', target='_blank')
+                                    | Web Geliştirme
+                                    br
+                                    span.number 425
+                                    span İlan
+                                    i.fas.fa-arrow-right
+        // END CATEGORIES SECTION
